@@ -1,0 +1,24 @@
+<template>
+        
+            
+           
+            
+        
+        
+        <lightning-card  title="International Space Station Current Location">
+            <lightning-button label="Refresh" onclick={handleRefresh} slot="actions"></lightning-button>
+            <p class="slds-p-horizontal_small">Latitude :  {lat}</p>
+            <p class="slds-p-horizontal_small">Longitude : {long}</p>
+            
+        </lightning-card>
+        
+        <lightning-card  title="How Many People Are In Space Right Now">
+                
+            
+                <template for:each={people} for:item="person">
+                <p class="slds-p-horizontal_small"  key={person.i}> => Person Name : {person.name}</p>
+                <p class="slds-p-horizontal_small" key={person.i}>Craft : {person.craft}</p>
+            </template>
+            </lightning-card>
+        
+</template>
