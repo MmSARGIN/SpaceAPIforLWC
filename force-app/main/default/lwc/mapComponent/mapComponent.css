@@ -1,0 +1,8 @@
+.text{
+    position: relative;
+    z-index: 1;
+}
+.map{
+    position: absolute;
+    z-index: 0;
+}
